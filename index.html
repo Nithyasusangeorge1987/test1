@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Links</title>
+    <title>Seminar PDF Repository</title>
     <style>
-        /* Keep your existing styles */
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
@@ -21,7 +20,7 @@
         }
         .pdf-link {
             display: block;
-            padding: 10px;
+            padding: 15px;
             margin: 10px 0;
             background-color: #f8f8f8;
             border-radius: 4px;
@@ -34,15 +33,25 @@
         h1 {
             color: #333;
         }
+        .description {
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 3px solid #0066cc;
+            background-color: #f8f8f8;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>PDF Links</h1>
-        <!-- All links using the working absolute path -->
-        <a href="https://nithyasusangeorge1987.github.io/test1/seminar.pdf" class="pdf-link">https://nithyasusangeorge1987.github.io/test1/seminar.pdf</a>
-        <a href="https://nithyasusangeorge1987.github.io/test1/seminar.pdf" class="pdf-link">https://nithyasusangeorge1987.github.io/test1/seminar.pdf</a>
-       
+        <h1>Seminar Documents</h1>
+        <div class="description">
+            <p>This page contains links to seminar-related PDF documents. Click on any link below to view the PDF.</p>
+        </div>
+        <div id="pdf-container">
+            <a href="seminar.pdf" class="pdf-link" target="_blank">View Seminar PDF Document</a>
+            <a href="seminar.pdf" class="pdf-link" target="_blank">Download Seminar PDF Document</a>
+            <a href="seminar.pdf" class="pdf-link" target="_blank">Access Seminar PDF Document</a>
+        </div>
     </div>
 </body>
 </html>
