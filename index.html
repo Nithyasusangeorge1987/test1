@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:type" content="website">
+    <link rel="alternate" type="application/pdf" href="nextcloud-flyer.pdf">
     <title>Seminar PDF Repository</title>
     <style>
-        /* Your existing styles remain the same */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pdf-link {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .pdf-link:hover {
+            background-color: #e8e8e8;
+        }
+        h1 {
+            color: #333;
+        }
+        .description {
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 3px solid #0066cc;
+            background-color: #f8f8f8;
+        }
+        .pdf-item {
+            margin-bottom: 15px;
+        }
+        .file-type {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -15,9 +59,26 @@
             <p>This page contains links to seminar-related PDF documents. Click on any link below to view the PDF.</p>
         </div>
         <div id="pdf-container">
-            <!-- Changed the file name to remove spaces -->
-            <a href="nextcloud-flyer.pdf" class="pdf-link" target="_blank">Nextcloud Flyer</a>
-            <a href="nextcloud-flyer.pdf" class="pdf-link" target="_blank">Nextcloud Flyer</a>
+            <div class="pdf-item">
+                <a href="nextcloud-flyer.pdf" 
+                   class="pdf-link" 
+                   target="_blank"
+                   type="application/pdf" 
+                   data-type="pdf">
+                    Nextcloud Flyer (Version 1)
+                </a>
+                <span class="file-type">(PDF Document)</span>
+            </div>
+            <div class="pdf-item">
+                <a href="nextcloud-flyer.pdf" 
+                   class="pdf-link" 
+                   target="_blank"
+                   type="application/pdf"
+                   data-type="pdf">
+                    Nextcloud Flyer (Version 2)
+                </a>
+                <span class="file-type">(PDF Document)</span>
+            </div>
         </div>
     </div>
 </body>
