@@ -3,70 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Seminar PDF Repository</title>
+    <title>Testing Page</title>
     <style>
+        /* General styles */
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
         }
         .container {
-            background-color: white;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1 {
-            text-align: center;
-            color: #333;
+        h1, h2 {
+            color: #343a40;
         }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            background-color: #343a40;
+            padding: 10px 20px;
+            justify-content: space-around;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        .navbar a:hover {
+            background-color: #495057;
+        }
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+        th {
+            background-color: #e9ecef;
+        }
+        /* Tabs section */
         .tabs {
             display: flex;
-            border-bottom: 2px solid #ccc;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
         .tab {
             flex: 1;
             text-align: center;
             padding: 10px;
             cursor: pointer;
-            background-color: #f8f8f8;
-            border: 1px solid #ccc;
-            border-bottom: none;
+            background-color: #e9ecef;
+            border: 1px solid #dee2e6;
         }
         .tab.active {
-            background-color: white;
-            border-bottom: 2px solid white;
-            font-weight: bold;
+            background-color: #fff;
+            border-bottom: none;
         }
         .tab-content {
             display: none;
+            border: 1px solid #dee2e6;
+            padding: 20px;
         }
         .tab-content.active {
             display: block;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+        /* Image section */
+        .image-section {
+            text-align: center;
+            margin: 20px 0;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ccc;
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
         }
-        th {
-            background-color: #f8f8f8;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
     <script>
@@ -81,64 +118,84 @@
     </script>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <div class="container">
-        <h1>Seminar PDF Repository</h1>
+        <h1>Testing Page</h1>
+        <p>This page is created for testing purposes. It contains multiple elements such as tables, links, paragraphs, images, and navigation tabs for you to test your setup.</p>
         
+        <h2>Random Paragraphs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros viverra, tempor justo a, tincidunt nisi.</p>
+        <p>Phasellus et ligula ac velit scelerisque facilisis at eget enim. Donec id risus vitae quam hendrerit egestas.</p>
+        
+        <h2>Table Section</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Example Item 1</td>
+                    <td>This is a sample item description.</td>
+                    <td><a href="https://example.com" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Example Item 2</td>
+                    <td>Another description for testing purposes.</td>
+                    <td><a href="https://example.com" target="_blank">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>PDF Example</td>
+                    <td>Download a PDF for testing.</td>
+                    <td><a href="https://example.com/sample.pdf" target="_blank">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Image Section</h2>
+        <div class="image-section">
+            <img src="https://via.placeholder.com/800x400" alt="Sample Image 1">
+            <p class="image-caption">Figure 1: Placeholder image for testing purposes.</p>
+            
+            <img src="https://via.placeholder.com/600x300" alt="Sample Image 2">
+            <p class="image-caption">Figure 2: Another placeholder image for testing purposes.</p>
+        </div>
+
+        <h2>Tabs Section</h2>
         <!-- Tabs -->
         <div class="tabs">
-            <div class="tab active" onclick="switchTab(0)">Flyers</div>
-            <div class="tab" onclick="switchTab(1)">Reasons</div>
+            <div class="tab active" onclick="switchTab(0)">Tab 1</div>
+            <div class="tab" onclick="switchTab(1)">Tab 2</div>
+            <div class="tab" onclick="switchTab(2)">Tab 3</div>
         </div>
 
-        <!-- Tab Content 1: Flyers -->
+        <!-- Tab Contents -->
         <div class="tab-content active">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Document Name</th>
-                        <th>Type</th>
-                        <th>Download Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nextcloud Flyer (Version 1)</td>
-                        <td>PDF Document</td>
-                        <td>
-                            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">Download</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nextcloud Flyer (Version 2)</td>
-                        <td>PDF Document</td>
-                        <td>
-                            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">Download</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Content for Tab 1</h3>
+            <p>This is the content for Tab 1. You can put any information here.</p>
         </div>
-
-        <!-- Tab Content 2: Reasons -->
         <div class="tab-content">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Document Name</th>
-                        <th>Type</th>
-                        <th>Download Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Reasons to Use Nextcloud</td>
-                        <td>PDF Document</td>
-                        <td>
-                            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/ReasonsNextcloud.pdf" target="_blank">Download</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Content for Tab 2</h3>
+            <p>This is the content for Tab 2. Add tables, images, or links if needed.</p>
+        </div>
+        <div class="tab-content">
+            <h3>Content for Tab 3</h3>
+            <p>This is the content for Tab 3. Use this area for additional information.</p>
         </div>
     </div>
 </body>
