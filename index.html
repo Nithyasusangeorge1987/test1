@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Page</title>
+    <title>HTML Testing Page with Tables and Links</title>
     <style>
-        /* General styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f4f9;
         }
         .container {
             max-width: 1200px;
@@ -18,14 +17,30 @@
             padding: 20px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #343a40;
+        h1, h2, h3 {
+            color: #333;
         }
         p {
             line-height: 1.6;
             margin: 10px 0;
+        }
+        .table-container {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
         a {
             color: #007bff;
@@ -34,62 +49,13 @@
         a:hover {
             text-decoration: underline;
         }
-        /* Navigation bar styles */
-        .navbar {
-            display: flex;
-            background-color: #343a40;
-            padding: 10px 20px;
-            justify-content: space-around;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 4px;
-        }
-        .navbar a:hover {
-            background-color: #495057;
-        }
-        /* Table styles */
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .pdf-links {
             margin: 20px 0;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #dee2e6;
-        }
-        th {
-            background-color: #e9ecef;
-        }
-        /* Tabs section */
-        .tabs {
-            display: flex;
-            margin-top: 20px;
-        }
-        .tab {
-            flex: 1;
-            text-align: center;
-            padding: 10px;
-            cursor: pointer;
-            background-color: #e9ecef;
-            border: 1px solid #dee2e6;
-        }
-        .tab.active {
-            background-color: #fff;
-            border-bottom: none;
-        }
-        .tab-content {
-            display: none;
-            border: 1px solid #dee2e6;
-            padding: 20px;
-        }
-        .tab-content.active {
+        .pdf-links a {
             display: block;
+            margin: 5px 0;
         }
-        /* Image section */
         .image-section {
             text-align: center;
             margin: 20px 0;
@@ -97,106 +63,150 @@
         .image-section img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-bottom: 10px;
+            border-radius: 8px;
         }
         .image-caption {
             font-size: 0.9em;
             color: #555;
         }
     </style>
-    <script>
-        function switchTab(tabIndex) {
-            const tabs = document.querySelectorAll(".tab");
-            const contents = document.querySelectorAll(".tab-content");
-            tabs.forEach((tab, index) => {
-                tab.classList.toggle("active", index === tabIndex);
-                contents[index].classList.toggle("active", index === tabIndex);
-            });
-        }
-    </script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </div>
-
     <div class="container">
-        <h1>Testing Page</h1>
-        <p>This page is created for testing purposes. It contains multiple elements such as tables, links, paragraphs, images, and navigation tabs for you to test your setup.</p>
+        <h1>Testing Page with Tables, Links, and Images</h1>
+        <p>
+            This page includes random tables, multiple paragraphs, images, and links to evaluate extraction capabilities.
+        </p>
         
-        <h2>Random Paragraphs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros viverra, tempor justo a, tincidunt nisi.</p>
-        <p>Phasellus et ligula ac velit scelerisque facilisis at eget enim. Donec id risus vitae quam hendrerit egestas.</p>
-        
-        <h2>Table Section</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Item</th>
-                    <th>Description</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Nextcloud Flyer (Version 1)</td>
-                    <td>Flyer for Nextcloud overview.</td>
-                    <td><a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">View PDF</a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Nextcloud Flyer (Version 2)</td>
-                    <td>Updated flyer for Nextcloud.</td>
-                    <td><a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">View PDF</a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Reasons to Use Nextcloud</td>
-                    <td>Document highlighting benefits of Nextcloud.</td>
-                    <td><a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/ReasonsNextcloud.pdf" target="_blank">View PDF</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Table 1: Random User Data</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                        <td>+1-555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane.smith@example.com</td>
+                        <td>+1-555-5678</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bob Johnson</td>
+                        <td>bob.johnson@example.com</td>
+                        <td>+1-555-9876</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h2>Image Section</h2>
+        <h2>Table 2: Product Information</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Smartphone</td>
+                        <td>Electronics</td>
+                        <td>$499</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Headphones</td>
+                        <td>Accessories</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Laptop</td>
+                        <td>Electronics</td>
+                        <td>$899</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Table 3: Country Data</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Capital</th>
+                        <th>Population</th>
+                        <th>Region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>USA</td>
+                        <td>Washington, D.C.</td>
+                        <td>331 million</td>
+                        <td>North America</td>
+                    </tr>
+                    <tr>
+                        <td>Germany</td>
+                        <td>Berlin</td>
+                        <td>83 million</td>
+                        <td>Europe</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Tokyo</td>
+                        <td>125 million</td>
+                        <td>Asia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>PDF Links</h2>
+        <div class="pdf-links">
+            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">
+                Nextcloud Flyer (Version 1)
+            </a>
+            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/nextcloud-flyer.pdf" target="_blank">
+                Nextcloud Flyer (Version 2)
+            </a>
+            <a href="https://raw.githubusercontent.com/Nithyasusangeorge1987/test1/main/ReasonsNextcloud.pdf" target="_blank">
+                Reasons to Use Nextcloud
+            </a>
+        </div>
+
+        <h2>Images</h2>
         <div class="image-section">
             <img src="https://Nithyasusangeorge1987.github.io/test1/sample-image1.jpeg" alt="Sample Image 1">
-            <p class="image-caption">Figure 1: Sample Image 1 hosted on GitHub Pages.</p>
+            <p class="image-caption">Sample Image 1</p>
             
             <img src="https://Nithyasusangeorge1987.github.io/test1/sample-image2.jpg" alt="Sample Image 2">
-            <p class="image-caption">Figure 2: Sample Image 2 hosted on GitHub Pages.</p>
+            <p class="image-caption">Sample Image 2</p>
         </div>
 
-        <h2>Tabs Section</h2>
-        <!-- Tabs -->
-        <div class="tabs">
-            <div class="tab active" onclick="switchTab(0)">Tab 1</div>
-            <div class="tab" onclick="switchTab(1)">Tab 2</div>
-            <div class="tab" onclick="switchTab(2)">Tab 3</div>
-        </div>
-
-        <!-- Tab Contents -->
-        <div class="tab-content active">
-            <h3>Content for Tab 1</h3>
-            <p>This is the content for Tab 1. You can put any information here.</p>
-        </div>
-        <div class="tab-content">
-            <h3>Content for Tab 2</h3>
-            <p>This is the content for Tab 2. Add tables, images, or links if needed.</p>
-        </div>
-        <div class="tab-content">
-            <h3>Content for Tab 3</h3>
-            <p>This is the content for Tab 3. Use this area for additional information.</p>
-        </div>
+        <h2>Conclusion</h2>
+        <p>
+            This page concludes the testing section with multiple tables, images, and links for evaluation purposes.
+        </p>
     </div>
 </body>
 </html>
